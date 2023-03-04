@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #menu * { 
+            padding:0; 
+            margin: 0; 
+            font: 12px georgia; 
+            list-style-type:none;
+          }
+          #menu { 
+            margin-top: 100px;
+            float: left;
+            line-height: 10px; 
+            left: 200px;
+          }
+          #menu a { 
+            display: block; 
+            text-decoration: none; 
+            color: #3B5330;
+          }
+          #menu a:hover { background: #B0BD97;}
+          #menu ul li ul li a:hover { 
+            background: #ECF1E7; 
+            padding-left:9px;
+            border-left: solid 1px #000;
+          }
+          #menu ul li ul li {
+            width: 140px; 
+            border: none; 
+            color: #B0BD97;  
+            padding-top: 3px; 
+            padding-bottom:3px; 
+            padding-left: 3px; 
+            padding-right: 3px; 
+            background: #B0BD97;
+          }
+          #menu ul li ul li a { 
+            font: 11px arial; 
+            font-weight:normal; 
+            font-variant: small-caps; 
+            padding-top:3px; 
+            padding-bottom:3px;
+          }
+          #menu ul li {
+            float: left; 
+            width: 146px; 
+            font-weight: bold; 
+            border-top: solid 1px #283923; 
+            border-bottom: solid 1px #283923; 
+            background: #979E71;
+          }
+          #menu ul li a { 
+            font-weight: bold;
+            padding: 15px 10px;
+          }
+          #menu li {
+            position:relative; 
+            float:left;
+          }
+          #menu ul li ul, #menu:hover ul li ul, #menu:hover ul li:hover ul li ul {
+            display:none;
+            list-style-type:none;
+            width: 140px;
+          }
+          #menu:hover ul, #menu:hover ul li:hover ul, #menu:hover ul li:hover ul li:hover ul {
+            display:block;
+          }
+          #menu:hover ul li:hover ul li:hover ul {
+            position: absolute;
+            margin-left: 145px;
+            margin-top: -22px;
+            font: 10px;
+          }
+          #menu:hover ul li:hover ul {
+            position: absolute;
+            margin-top: 1px;
+            font: 10px;
+          }
+    </style>
+</head>
+<body>
+
+    <div id="menu">
+        <ul>
+          <li><center><a href="X">Home</a></center>
+            <ul>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Disclaimer</a></li>
+            </ul>
+          </li>	
+          <li>
+            <center><a href="#">Practice Areas</a></center>
+            <ul>
+              <li><a href="#">Civil Law</a></li>
+              <li><a href="#">Criminal Law &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &rsaquo;</a>
+                <ul>
+                  <li><a href="#">Joomla</a></li>
+                  <li><a href="#">Drupal</a></li>
+                  <li><a href="#">Wordpress</a></li>
+                </ul>
+              <li><a href="#">Family Law &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &rsaquo;</a>
+                <ul>
+                  <li><a href="#">Joomla</a></li>
+                  <li><a href="#">Drupal</a></li>
+                  <li><a href="#">Wordpress</a></li>
+                </ul>
+              <li><a href="#">Personal Injury &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&rsaquo;</a>
+                <ul>
+                  <li><a href="#">Joomla</a></li>
+                  <li><a href="#">Drupal</a></li>
+                  <li><a href="#">Wordpress</a></li>
+                </ul>
+              <li><a href="#">Traffic Offenses &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&rsaquo;</a>
+                <ul>
+                  <li><a href="#">Joomla</a></li>
+                  <li><a href="#">Drupal</a></li>
+                  <li><a href="#">Wordpress</a></li>
+                </ul>
+              <li><a href="#">FAQ</a>	</li>
+            </ul>
+          </li>
+      
+          <li><center><a href="#">Attorney</a></center>
+            <ul>
+              <li><a href="#">X</a></li>
+              <li><a href="#">X</a></li>
+              <li><a href="#">X</a></li>
+              <li><a href="#">X</a></li>
+            </ul>
+          </li>
+      
+          <li><center><a href="#">Contact Us</a></center>
+            <ul>
+              <li><a href="#">Locations &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&rsaquo;</a>
+                <ul>
+                  <li><a href="#">Rockville Office</a></li>
+                  <li><a href="#">Frederick Office</a></li>
+                  <li><a href="#">Greenbelt Office</a></li>
+                </ul>
+              <li><a href="#">Phone Directory</a></li>
+              <li><a href="#">Mailing Address</a></li>
+            </ul>
+      
+          </li>
+      
+          <li><center><a href="#">Resources</a></center>
+            <ul>
+              <li><a href="#">Helpful Links</a></li>
+              <li><a href="#">Affiliates &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&rsaquo;</a>
+                <ul>
+                  <li><a href="#">Healthcare Providers</a></li>
+                  <li><a href="#">Insurance Companies</a></li>
+                </ul>
+              </li></ul>
+          <li><center><a href="#">News &amp; Events</a></center>
+            <ul>
+              <li><a href="#">Press Articles</a></li>
+              <li><a href="#">Newsletter</a></li>
+              <li><a href="#">Events</a></li>
+              <li><a href="#">Blog</a></li>
+            </ul>
+          <li><center><a href="#">Espanol</a></center>
+            <ul>
+              <li><a href="#">X</a></li>
+            </ul>
+      
+        </ul>
+      </div>
+    
+</body>
+</html>
