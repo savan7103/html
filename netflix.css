@@ -1,0 +1,299 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+
+}
+
+.col-50 {
+    width: 50%;
+}
+
+.row {
+    display: flex;
+}
+
+.jcs {
+    justify-content: space-between;
+}
+
+.container {
+    width: 1250px;
+    margin: 0 auto;
+}
+
+.sec-1 {
+    background-image: url(../netflix/IN-en-20230116-popsignuptwoweeks-perspective_alpha_website_medium.jpg );
+    /* background-image: linear-gradient(0deg,rgba(0,0,0,.10) 0,transparent 40%,rgb(0, 0, 0)); */
+    background-size: 100%;
+
+}
+
+.po-rel {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, .10) 0, transparent 40%, rgb(0, 0, 0));
+    position: relative;
+
+}
+
+.nev-links img {
+    width: 150px;
+}
+
+.nev-links-2 select {
+    border: white solid 1px;
+    background: transparent;
+    color: white;
+    margin: 25px;
+    padding: 8px 15px;
+}
+
+.nev-links-2 a {
+    color: #fff;
+    background-color: #E50914;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.sec-1-text h1 {
+    color: #fff;
+    font-size: 50px;
+    text-align: center;
+    padding-top: 100px;
+    letter-spacing: 1px;
+}
+
+.p1 {
+    color: #fff;
+    font-size: 30px;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.p2 {
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.sec-1-text input {
+
+    font-size: 20px;
+    /* color: #ffffff; */
+    padding: 18px 0px 18px 10px;
+    margin: 50px 290px 10px 290px;
+    border: none;
+    border-radius: 15px 0 0 15px;
+    width: 40%;
+
+}
+
+.sec-1-text button {
+    background-color: #E50914;
+    padding: 18px 18px;
+    font-size: 20px;
+    margin-left: -295px;
+    /* border-radius: 0 15px 15px 0; */
+    color: #ffffff;
+    border: none;
+}
+
+.p3 {
+    color: yellow;
+    /* text-align: center; */
+    padding-bottom: 130px;
+    font-weight: bold;
+    margin-left: 300px;
+}
+
+.line {
+    background-color: gray;
+    padding: 5px;
+}
+
+.po-re {
+    position: relative;
+    bottom: 386px;
+    right: -76px;
+    z-index: -1;
+}
+
+.bgc {
+    background-color: #000;
+    z-index: 1;
+
+}
+
+.p4 {
+    color: white;
+    font-size: 50px;
+    font-weight: bolder;
+    padding: 150px 0 20px 100px;
+}
+
+.p5 {
+    color: white;
+    font-size: 30px;
+    font-weight: bolder;
+    padding: 10px 0 20px 100px;
+}
+
+.bo {
+    border: 1px solid grey;
+    background: #000;
+    border-radius: 10px;
+    width: 350px;
+}
+
+.sec-3-po img {
+    width: 80px;
+    padding-left: 10px;
+}
+
+.p6 {
+    color: #fff;
+    font-weight: bolder;
+    padding: 25px 0 5px 10px;
+}
+
+.p7 {
+    color: #0071eb;
+    padding: 0px 0 5px 10px;
+}
+
+.po-r {
+    position: relative;
+    bottom: 165px;
+    left: 140px;
+    /* z-index: -1; */
+}
+
+.our-story-card-animation-custom {
+    -webkit-text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+    direction: ltr;
+    font-size: 16px;
+    font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+    color: #fff;
+    letter-spacing: 0 !important;
+    background: url(https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/download-icon.gif) 50% no-repeat;
+    background-size: 100%;
+    content: "";
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 0;
+    outline: 2px solid #000;
+    outline-offset: -2px;
+    width: 3em;
+    /* height: 3.75em; */
+    margin-left: 50px;
+}
+
+.po-rela {
+    position: relative;
+    bottom: 443px;
+    right: -110px;
+    z-index: -1;
+}
+
+.vid video {
+    width: 400px;
+}
+
+.sec-4 {
+    background-color: #000;
+}
+
+.accordion {
+    color: #fff;
+    background: #303030;
+    width: 50rem;
+    height: 3.3rem;
+    cursor: pointer;
+    display: block;
+    margin: 10px auto;
+    overflow: hidden;
+    transition: all 0.3s;
+}
+
+.accordion:hover {
+    box-shadow: 0 1px 10px rgb(0, 0, 0, 0.5);
+}
+
+.accordionTop {
+    position: relative;
+    margin: 0.6rem 1rem;
+    
+}
+
+.accordion h2 {
+    font-size: 1.6rem;
+}
+
+.accordionTop::after {
+    content: '+';
+    font-weight: bold;
+    font-size: 1.9rem;
+    position: absolute;
+    cursor: pointer;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.content {
+    height: 0px;
+    padding: 1rem;
+    transition: all 0.3s;
+}
+
+hr {
+    opacity: 0;
+}
+
+.accordion.active {
+    height: auto;
+}
+
+.para {
+    font-size: 1.2rem;
+}
+
+.accordion.active hr {
+    opacity: 1;
+}
+
+.accordion.active .accordionTop::after {
+    content: '-';
+}
+
+.accordion.active .content {
+    height: auto;
+    transition: all 0.3s;
+}
+
+@media screen and (max-width: 420px) {
+    .accordion {
+        width: 90%;
+        margin: 0.6rem auto;
+    }
+
+    .accordionTop h2 {
+        font-size: 1.1rem;
+    }
+}
+.p8{
+    font-size: 50px;
+    margin-left: 300px;
+    font-weight: bolder;
+    color: #fff;
+}
+.p9 {
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+    padding: 10px 100px 10px 0;
+    margin-bottom: -30px;
+}
