@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Restaurant Booking Form</title>
+  </head>
+  <body>
+    <h1>Restaurant Booking Form</h1>
+    <form id="booking-form">
+      <label for="booking-type">Choice of booking:</label>
+      <select id="booking-type" name="booking-type" onchange="updateBookingForm()">
+        <option value="full-day">Full day booking</option>
+        <option value="half-day">Half day booking</option>
+        <option value="hourly">Hourly booking</option>
+      </select>
+      <br><br>
+      <label for="user-name">User name:</label>
+      <input type="text" id="user-name" name="user-name" required>
+      <br><br>
+      <label for="mobile-number">Mobile number:</label>
+      <input type="tel" id="mobile-number" name="mobile-number" required>
+      <br><br>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+      <br><br>
+      <label for="num-of-persons">No. of persons:</label>
+      <input type="number" id="num-of-persons" name="num-of-persons" min="1" max="10" required>
+      <br><br>
+      <div id="booking-options">
+        <label for="booking-date">Date:</label>
+        <input type="date" id="booking-date" name="booking-date" required>
+        <br><br>
+      </div>
+      <button type="submit">Book Now</button>
+    </form>
+    <script>
+      function updateBookingForm() {
+        const bookingType = document.getElementById('booking-type').value;
+        const bookingOptionsDiv = document.getElementById('booking-options');
+        bookingOptionsDiv.innerHTML = '';
+        if (bookingType === 'full-day') {
+          bookingOptionsDiv.innerHTML += `
+            <label for="booking-date">Date:</label>
+            <input type="date" id="booking-date" name="booking-date" required>
+            <br><br>
+          `;
+        } else if (bookingType === 'half-day') {
+          bookingOptionsDiv.innerHTML += `
+            <label for="booking-date">Date:</label>
+            <input type="date" id="booking-date" name="booking-date" required>
+            <br><br>
+            <label for="booking-slot">Slot:</label>
+            <select id="booking-slot" name="booking-slot" required>
+              <option value="breakfast">Breakfast</option>
+              <option value="lunch">Lunch</option>
+              <option value="dinner">Dinner</option>
+            </select>
+            <br><br>
+          `;
+        } else if (bookingType === 'hourly') {
+          bookingOptionsDiv.innerHTML += `
+            <label for="booking-date">Date:</label>
+            <input type="date" id="booking-date" name="booking-date" required>
+            <br><br>
+            <label for="booking-time">Time:</label>
+            <input type="time" id="booking-time" name="booking-time" required>
+            <br><br>
+          `;
+        }
+      }
+    </script>
+  </body>
+</html>
